@@ -19,6 +19,27 @@
 
     <meta name="twitter:card" content="summary_large_image" />
 
+    <!-- Google Ads Tag -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17617048942"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-17617048942');
+
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') { window.location = url; }
+        };
+        gtag('event', 'conversion', {
+          'send_to': 'AW-17617048942/1PJBCMPPxp0cEO6qu9BB',
+          'event_callback': callback
+        });
+        return false;
+      }
+    </script>
+    <!-- End Google Ads Tag -->
+
     <!-- Meta Pixel Code -->
     <script>
       !function(f,b,e,v,n,t,s)
